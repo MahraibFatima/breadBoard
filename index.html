@@ -4,10 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>BreadBoard</title>
 </head>
 
 <body>
+    <div class="header">
+        <div class="logo">B</div>
+        <h1>BreadBoard</h1>
+    </div>
+    
     <form>
         <div>
             <label>Enter your Name</label>
@@ -16,59 +22,48 @@
 
         <div>
             <p>Bread Type</p>
-            <input type="radio" required>
-            <label>White</label>
-
-            <input type="radio" required>
-            <label>Wheat</label>
-
-            <input type="radio" required>
-            <label>Croissant</label>
-
-            <input type="radio" required>
-            <label>Sourdough</label>
-
-            <input type="radio" required>
-            <label>Brioche </label>
+            <div class="radio-group">
+                <label><input type="radio" name="bread" required> White</label>
+                <label><input type="radio" name="bread" required> Wheat</label>
+                <label><input type="radio" name="bread" required> Croissant</label>
+                <label><input type="radio" name="bread" required> Sourdough</label>
+                <label><input type="radio" name="bread" required> Brioche</label>
+            </div>
         </div>
 
         <div>
             <p>Meat Type</p>
             <select>
-                <option value="Ham">Volvo</option>
-                <option value="Turkey">Saab</option>
-                <option value="Mystery Meat">Mercedes</option>
-                <option value="No meat">Audi</option>
+                <option value="Ham">Ham</option>
+                <option value="Turkey">Turkey</option>
+                <option value="Mystery Meat">Mystery Meat</option>
+                <option value="No meat">No meat</option>
             </select>
         </div>
 
         <div>
             <p>Cheese</p>
-            <input type="checkbox" value="option 1"> Cheddar
-            <input type="checkbox" value="option 2"> Swiss
-            <input type="checkbox" value="option 2"> Plastic Cheese
-            <input type="checkbox" value="option 2"> No cheese
+            <div class="checkbox-group">
+                <label><input type="checkbox" value="Cheddar"> Cheddar</label>
+                <label><input type="checkbox" value="Swiss"> Swiss</label>
+                <label><input type="checkbox" value="Plastic Cheese"> Plastic Cheese</label>
+                <label><input type="checkbox" value="No cheese"> No cheese</label>
+            </div>
         </div>
 
         <div>
             <p>Weird Add-ons</p>
-            <div>
-                <input type="checkbox">
-                <label for="weirdo1">Gummy Bears</label><br>
-                <input type="checkbox">
-                <label for="weirdo2"> Spaghetti</label><br>
-                <input type="checkbox">
-                <label for="weirdo3"> Gold flakes</label><br>
-                <input type="checkbox">
-                <label for="weirdo3"> Toothpaste</label><br>
-                <br>
+            <div class="checkbox-group">
+                <label><input type="checkbox" id="weirdo1"> Gummy Bears</label>
+                <label><input type="checkbox" id="weirdo2"> Spaghetti</label>
+                <label><input type="checkbox" id="weirdo3"> Gold flakes</label>
+                <label><input type="checkbox" id="weirdo4"> Toothpaste</label>
             </div>
         </div>
 
         <div>
             <label>Toasted?</label>
-            <input type="checkbox">
-            <label for="toggle"></label>
+            <input type="checkbox" id="toggle">
         </div>
 
         <div>
@@ -80,7 +75,11 @@
             <p>Addition Comment</p>
             <textarea id="comment" name="c" rows="4" cols="50">I want this delivered by drone ;)</textarea>
         </div>
-        <input type="submit" value="Submit">
+        
+        <div class="button-group">
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </div>
     </form>
 </body>
 
