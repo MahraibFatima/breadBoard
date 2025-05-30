@@ -1,11 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>BreadBoard</title>
 </head>
+
 <body>
-    
+    <form>
+        <div>
+            <label>Enter your Name</label>
+            <input type="text" required>
+        </div>
+
+        <div>
+            <p>Bread Type</p>
+            <input type="radio" required>
+            <label>White</label>
+
+            <input type="radio" required>
+            <label>Wheat</label>
+
+            <input type="radio" required>
+            <label>Croissant</label>
+
+            <input type="radio" required>
+            <label>Sourdough</label>
+
+            <input type="radio" required>
+            <label>Brioche </label>
+        </div>
+
+        <div>
+            <p>Meat Type</p>
+            <select>
+                <option value="Ham">Volvo</option>
+                <option value="Turkey">Saab</option>
+                <option value="Mystery Meat">Mercedes</option>
+                <option value="No meat">Audi</option>
+            </select>
+        </div>
+
+        <div>
+            <p>Cheese</p>
+            <input type="checkbox" value="option 1"> Cheddar
+            <input type="checkbox" value="option 2"> Swiss
+            <input type="checkbox" value="option 2"> Plastic Cheese
+            <input type="checkbox" value="option 2"> No cheese
+        </div>
+
+        <div>
+            <p>Weird Add-ons</p>
+            <div>
+                <input type="checkbox">
+                <label for="weirdo1">Gummy Bears</label><br>
+                <input type="checkbox">
+                <label for="weirdo2"> Spaghetti</label><br>
+                <input type="checkbox">
+                <label for="weirdo3"> Gold flakes</label><br>
+                <input type="checkbox">
+                <label for="weirdo3"> Toothpaste</label><br>
+                <br>
+            </div>
+        </div>
+
+        <div>
+            <label>Toasted?</label>
+            <input type="checkbox">
+            <label for="toggle"></label>
+        </div>
+
+        <div>
+            <p>Sauce Level</p>
+            <input type="range" id="range_val" min="0" max="10" value="5">
+        </div>
+
+        <div>
+            <p>Addition Comment</p>
+            <textarea id="comment" name="c" rows="4" cols="50">I want this delivered by drone ;)</textarea>
+        </div>
+        <input type="submit" value="Submit">
+    </form>
 </body>
+
 </html>
